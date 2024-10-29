@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2 </title>
+    <style>
+        table,th,td{
+			border: 3px solid darkmagenta;
+            width: max-content;
+        }
+        h1{
+            background-color: skyblue;
+        }
+        #one {
+            background-color: black;
+        }
+        h2{
+            background-color: black;
+            color: wheat;
+        }
+        button:hover {
+      background-color: green;
+    }
+
+    /* Styling for table elements */
+table, th, td {
+    border: 3px solid darkmagenta;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Ensure the table does not overflow */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header styling */
+h1 {
+    background-color: skyblue;
+    text-align: center;
+    padding: 20px;
+    animation: slideIn 2s ease-in-out;
+}
+
+/* Second header with animation */
+h2 {
+    background-color: black;
+    color: wheat;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: green;
+    transition: background-color 0.5s ease-in;
+}
+
+/* Black background for the image marquee */
+#one {
+    background-color: black;
+    padding: 20px;
+}
+
+/* Animation for the images */
+#one img {
+    animation: imageSlide 10s infinite alternate;
+}
+
+/* Information div for Rohit Sharma */
+#info {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive design for the images */
+#one img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+/* Keyframe animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes imageSlide {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1><marquee>
+        INFO ABOUT <br>
+        ROHIT SHARMA</marquee>
+    </h1>
+    <h2><marquee direction="right" onmouseover="stop()" onmouseout="start()"> STATUS:CRICKETER  </marquee> </h2>
+<div id="one">
+    <marquee onmouseover="stop()" onmouseout="start()">
+     <img src="image/r1 (1).jpg" width="300" >
+     <img src="image/r1 (2).jpg" width="600" height="560">
+     <img src="image/r1 (5).jpg" width="500" height="560">
+    </marquee>
+     <br><br>
+</div>
+
+<button onclick="showInfo()">Click to Show Information</button>
+<div id="info" style="display:none; margin-top: 20px;">
+ 
+  
+    <h3> INTL CAREER:2007-TILL DATE<br>
+       INDIA'S TOP-ORDER BATSMAN<br>
+       THE T20-WORLD CUP WINNING CAPTIAN <br>
+       THE FATHER OF DADDY HUNDERDS<br>
+       THE ONLY PLAYER ON THE PLANET WITH THREE DOUBLE CENTURIES IN ODIs<br>
+       THE ONE AND ONLY THE HITMAN<br>
+       ROHIT GURUNATH SHARMA
+    </h3>
+
+    <h2> LITTILE INFO </h2>
+ <p>Full Name:-
+
+    Rohit Gurunath Sharma<br>
+    
+    Born:-
+    
+    April 30, 1987, Bansod, Nagpur, Maharashtra<br>
+    
+    Age:-
+    
+    37y 151d<Br>
+    
+    Batting Style:-
+    
+    Right hand Bat<br>
+    
+    Bowling Style:-
+    
+    Right arm Offbreak<br>
+    
+    Playing Role:-
+    
+    Top order Batter<br><br>
+    
+   <h2>TEAMS</h2> 
+    
+    India flag team logo
+    India
+    Mumbai team logo
+    Mumbai
+    Mumbai Indians 2023 team logo
+    Mumbai Indians
+    Air India
+    Deccan Chargers team logo
+    Deccan Chargers
+    India B logo
+    India A
+    India Blue logo
+    India Blue
+    India Green logo
+    India Green
+    India Red logo
+    India Red
+    India Under-19s (Young Cricketers) logo
+    India Under-19s
+    Indian Board President's XI
+    Indian Oil Corporation XI
+    Mumbai Cricket Association President's XI
+    Mumbai Cricket Association XI
+    Mumbai Under-19s
+    Rest of India team logo
+    Rest of India
+    India B logo
+    West Zone</p>
+    <h2>Rohit Sharma player profile</h2>
+    <p> Languid and easy on the eye, Rohit Sharma owned all the shots in the book when he emerged from the Mumbai suburbs as heir apparent to the Indian batting greats of the 2000s. It took him time and persistence, but by the 2010s he had become a colossus in white-ball cricket, and the man in charge of perhaps the most formidable league team in the first age of T20.
+
+        That Rohit had talent was apparent to both the casual observer and to the trained eye. Fans were frustrated at the long wait for the potential to translate into runs, though selectors and captains, knowing better, kept backing him. At one point the word "talent" was Rohit's bugbear, a pejorative nickname for him on social media. Once it all clicked, though - the move to open the batting in ODIs late in 2012 was one particular turning point - things came together spectacularly.
+        
+        Rohit scored ODI double-hundreds for fun, won six IPLs in the first 15 editions of the tournament, scored five hundreds at the 2019 ODI World Cup, and when he finally got to open in Tests in 2019, three quick hundreds in his first series in the role, one of them a double.
+        
+        Ironically his IPL franchise nicknamed him "Hitman" when he was anything but: more caresser, less hitter. But Rohit still became known as one of the foremost hitters of colossal sixes of his era. So spectacular and certain was his acceleration that people began anticipate a massive score every time he went past 50.
+        
+        His captaincy at Mumbai Indians, whom he led to five titles, won plaudits. He proved himself a methodical, studious and calm leader, one not averse to using technology and data to arrive at decisions. He was an able deputy to Virat Kohli in limited-overs formats in international cricket, winning India two titles in Kohli's absence, and took over as captain in all formats in 2022.</p>
+        <button onclick="showStats()">STATS</button>
+        <div id="stats" style="display:none; margin-top: 20px;">
+        <h2>  BATTING-STATS</h2>
+        <table>
+        <tr>
+            <th>format</th>
+            <th>mat</th>
+            <th>inns</th>
+            <th>runs</th>
+            <th>HS</th>
+            <th>Ave</th>
+            <th>SR</th>
+            <th>100s</th>
+            <th>50s</th>
+            <th>4s</th>
+            <th>6s</th>
+        </tr>
+        <tr>
+            <td> TESTS</td>
+            <td>60</td>
+            <td>103</td>
+            <td>4148</td>
+            <td>212</td>
+            <td>44.60</td>
+            <td>57.00</td>
+            <td>12</td>
+            <td>17</td>
+            <td>454</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td> ODIS</td>
+            <td>265</td>
+            <td>257</td>
+            <td>10866</td>
+            <td>264</td>
+            <td>49.16</td>
+            <td>92.43</td>
+            <td>31</td>
+            <td>57</td>
+            <td>1012</td>
+            <td>331</td>
+        </tr>
+        <tr></tr>
+            <td> T20IS</td>
+            <td>159</td>
+            <td>151</td>
+            <td>4231</td>
+            <td>121</td>
+            <td>32.05</td>
+            <td>140.89</td>
+            <td>5</td>
+            <td>32</td>
+            <td>383</td>
+            <td>205</td>
+        </tr>
+        </table>
+        <h2> BOLWING-STATS</h2>
+        <table>
+        <tr>
+            <th>Format</th>
+            <th>Mat</th>
+            <th>Inns</th>
+            <th>Balls</th>
+            <th>Runs</th>
+            <th>Wkts</th>
+            <th>BBI</th>
+            <th>Econ</th>
+            <th>Ave</th>
+            <th>4w</th>
+            <th>5w</th>
+        </tr>
+        <tr>
+            <td> TESTS</td>
+            <td>60</td>
+            <td>16</td>
+            <td>383</td>
+            <td>224</td>
+            <td>2</td>
+            <td>1/26</td>
+            <td>3.50</td>
+            <td>112.00</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td> ODIS</td>
+            <td>265</td>
+            <td>40</td>
+            <td>610</td>
+            <td>533</td>
+            <td>9</td>
+            <td>2/27</td>
+            <td>5.24</td>
+            <td>59.22</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr></tr>
+            <td> T20IS</td>
+            <td>159</td>
+            <td>9</td>
+            <td>68</td>
+            <td>113</td>
+            <td>1</td>
+            <td>1/22</td>
+            <td>9.97</td>
+            <td>113.00</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+       
+            
+
+        
+      </table>
+
+    </div>
+<script>
+    function showInfo() {
+        // Get the info div
+        var infoDiv = document.getElementById("info");
+        
+        // Display the information
+        infoDiv.style.display = "block";
+    }
+    function showStats() {
+        var statsDiv=document.getElementById("stats");
+
+        statsDiv.style.display="block";
+    }
+</script>
+
+</body>
+</html>
